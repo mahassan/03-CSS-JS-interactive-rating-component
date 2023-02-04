@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+body{
+    background: hsl(216, 12%, 8%);
+    font-family: ;
+}
+.container{
+    margin:0 auto;
+    max-width: 375px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+section,
+button{
+    color:#fff;
+    border-radius: 10px;
+}
+section{
+    background: hsl(213, 19%, 18%);
+    padding: 23px;
+}
+button{
+    background: hsl(25, 97%, 53%);
+    border:0;
+    display: flex;
+    justify-content: stretch;
+    justify-items: start;
+}
