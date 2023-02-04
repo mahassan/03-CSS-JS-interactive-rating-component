@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
-
+html, body, ::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
 body{
     background: hsl(216, 12%, 8%);
-    font-family: ;
+    font-family: 'Overpass', sans-serif;
 }
 .container{
     margin:0 auto;
@@ -16,14 +20,28 @@ button{
     color:#fff;
     border-radius: 10px;
 }
+.star{
+    background:  hsl(216, 12%, 54%);
+    border-radius: 50px;
+    display: flex;
+    align-self: flex-start;
+    padding: 10px;
+}
 section{
     background: hsl(213, 19%, 18%);
     padding: 23px;
+    display: flex;
+    flex-direction: column;
+}
+p{
+    color: hsl(217, 12%, 63%);
 }
 button{
     background: hsl(25, 97%, 53%);
     border:0;
-    display: flex;
-    justify-content: stretch;
-    justify-items: start;
+    border-radius: 25px;
+    display: grid;
+    grid-column: 1/ span 2;
+    padding: 15px 0;
+    margin-top: 25px;
 }
