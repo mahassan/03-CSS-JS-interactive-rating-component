@@ -1,54 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="./styles/style.css">
-  <title>Frontend Mentor | Interactive rating component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Frontend Mentor | Interactive rating component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Rating state start -->
+    <div class="container">
+      <section>
+        <div class="star">
+          <img src="../images/icon-star.svg" />
+        </div>
+        <h1>How did we do?</h1>
 
-  <!-- Rating state start -->
-<div class="container">
-  <section>
-     <div class="star">
-       <img src="../images/icon-star.svg"/>
-     </div>
-    <h1>How did we do?</h1>
+        <p>
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <form id="rating">
+          <div class="ratings">
+            <ul>
+              <li>
+                <input type="radio" name="ratings" id="1" value="1" />
+                <label for="1">1</label>
+              </li>
+              <li>
+                <input type="radio" name="ratings" id="2" value="2" />
+                <label for="2">2</label>
+              </li>
+              <li>
+                <input type="radio" name="ratings" id="3" value="3" />
+                <label for="3">3</label>
+              </li>
+              <li>
+                <input type="radio" name="ratings" id="4" value="4" />
+                <label for="4">4</label>
+              </li>
+              <li>
+                <input type="radio" name="ratings" id="5" value="5" />
+                <label for="5">5</label>
+              </li>
+            </ul>
+          </div>
+          <button>Submit</button>
+        </form>
+      </section>
+    </div>
 
-    <p>
-      Please let us know how we did with your support request. All feedback is appreciated 
-      to help us improve our offering!
-    </p>
-  
-    1 2 3 4 5
-  
-    <button>
-      Submit
-    </button>
-  </section>
-</div>
+    <!-- Rating state end -->
 
-  <!-- Rating state end -->
+    <!-- Thank you state start -->
 
-  <!-- Thank you state start -->
+    You selected
+    <!-- Add rating here -->
+    out of 5 Thank you! We appreciate you taking the time to give a rating. If
+    you ever need more support, don’t hesitate to get in touch!
 
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
-</body>
+    <!-- Thank you state end -->
+  </body>
 </html>

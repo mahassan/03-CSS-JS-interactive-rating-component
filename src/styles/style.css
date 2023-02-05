@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
-html, body, ::after,::before{
+*, body, ::after,::before{
     margin: 0;
     padding: 0;
     box-sizing: content-box;
@@ -20,12 +20,52 @@ button{
     color:#fff;
     border-radius: 10px;
 }
+form{
+    display:grid; /*submit button is a child of form and cannot use grid-column if display is block*/
+}
+/* input[type="radio"] + label{
+    display: none;
+} */
+ul {
+    display: flex;
+    list-style: none;
+}
+li{
+    text-align: center;
+}
+label {
+    position: relative;
+    top: -27px;
+}
+input[type="radio"]{
+    appearance: none;
+    border-radius: 50%;
+    background: hsl(216, 12%, 54%);
+    height: 40px;
+    width: 40px;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+}
+input[type="radio"]::before{
+    content: "";
+    height: 40px;
+    width: 40px;
+    background: hsl(25, 97%, 53%);
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+}
+input[type="radio"]:checked::before {
+    transform: scale(1);
+  }
 .star{
     background:  hsl(216, 12%, 54%);
     border-radius: 50px;
     display: flex;
     align-self: flex-start;
     padding: 10px;
+    margin-bottom: 22px;
 }
 section{
     background: hsl(213, 19%, 18%);
@@ -35,6 +75,11 @@ section{
 }
 p{
     color: hsl(217, 12%, 63%);
+    margin:23px 0 33px 0;
+}
+.ratings{
+    display: flex;
+    justify-content: space-evenly;
 }
 button{
     background: hsl(25, 97%, 53%);
@@ -44,4 +89,6 @@ button{
     grid-column: 1/ span 2;
     padding: 15px 0;
     margin-top: 25px;
+    text-transform: uppercase;
+    font-size:1rem ;
 }
