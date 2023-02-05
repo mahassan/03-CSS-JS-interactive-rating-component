@@ -70,8 +70,7 @@ input[type="radio"]:checked::before {
 section{
     background: hsl(213, 19%, 18%);
     padding: 23px;
-    display: flex;
-    flex-direction: column;
+    display: grid;
 }
 p{
     color: hsl(217, 12%, 63%);
