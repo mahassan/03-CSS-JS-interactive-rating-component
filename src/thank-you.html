@@ -13,17 +13,7 @@
     />
     <link rel="stylesheet" href="./styles/style.css" />
     <title>Frontend Mentor | Interactive rating component</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+=
   </head>
   <body>
     <!-- Rating state start -->
@@ -43,17 +33,15 @@
       </section>
     </div>
 
-    <!-- Rating state end -->
-
-    <!-- Thank you state start -->
-
-
-
-    <!-- Thank you state end -->
     <script>
-        const rating = localStorage.getItem("rating");
-        const fill = document.querySelector(".rating");
-        fill.innerHTML = rating
-    </script>
+        // const query = window.location.search
+        // const check = new URLSearchParams(query).get('ratings')
+        // const rating = document.querySelector(".rating");
+        // console.log(rating)
+        // rating.innerHTML(check)
+        const form = new FormData();
+        console.log(form.getAll('ratings'))
+      </script>
+
   </body>
 </html>
