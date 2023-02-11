@@ -34,13 +34,8 @@
     </div>
 
     <script>
-        // const query = window.location.search
-        // const check = new URLSearchParams(query).get('ratings')
-        // const rating = document.querySelector(".rating");
-        // console.log(rating)
-        // rating.innerHTML(check)
-        const form = new FormData();
-        console.log(form.getAll('ratings'))
+        const rated = localStorage.getItem("rating");
+        console.log(rated)
       </script>
 
   </body>
