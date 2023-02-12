@@ -34,8 +34,9 @@
     </div>
 
     <script>
-        const rated = localStorage.getItem("rating");
-        console.log(rated)
+        const link = new URLSearchParams(window.location.search);
+        const rated = link.get('ratings');
+        const rating = document.querySelector(".rating").innerHTML = rated;
       </script>
 
   </body>
